@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="Practice.X23">
+        <methods>
+          <include name="befClassConf"/>
+          <include name="befMethodConf"/>
+          <include name="test1"/>
+          <include name="aftMethodConf"/>
+          <include name="aftClassconf"/>
+          <include name="befSuiteConf"/>
+          <include name="aftSuiteConf"/>
+        </methods>
+      </class> <!-- Practice.X23 -->
+      <class name="Practice.Practice1">
+        <methods>
+          <include name="befClassConf"/>
+          <include name="befMethodConf"/>
+          <include name="test1"/>
+          <include name="aftMethodConf"/>
+          <include name="aftClassconf"/>
+          <include name="befSuiteConf"/>
+          <include name="aftSuiteConf"/>
+        </methods>
+      </class> <!-- Practice.Practice1 -->
+      <class name="Practice.X12">
+        <methods>
+          <include name="befClassConf"/>
+          <include name="test"/>
+          <include name="befMethodConf"/>
+          <include name="demo"/>
+          <include name="aftMethodConf"/>
+          <include name="aftClassconf"/>
+          <include name="befSuiteConf"/>
+          <include name="aftSuiteConf"/>
+        </methods>
+      </class> <!-- Practice.X12 -->
+      <class name="Practice.Practice2">
+        <methods>
+          <include name="createContact"/>
+          <include name="befClassConf"/>
+          <include name="befMethodConf"/>
+          <include name="aftMethodConf"/>
+          <include name="aftClassconf"/>
+          <include name="befSuiteConf"/>
+          <include name="aftSuiteConf"/>
+        </methods>
+      </class> <!-- Practice.Practice2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
