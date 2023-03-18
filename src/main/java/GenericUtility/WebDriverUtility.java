@@ -193,19 +193,30 @@ public class WebDriverUtility {
 	   return dst.getAbsolutePath();
 	     
 	   }
+	   /**
+	    * This Method will Scroll 
+	    * @param driver
+	    */
 
 	   public void scrollActions(WebDriver driver)
 	   {
 	     JavascriptExecutor js=(JavascriptExecutor)driver;
 	     js.executeScript("window.scrollBy(0,500)","");
 	   }
+	   /**
+	    * this Method will Scroll till the element
+	    * @param driver
+	    * @param element
+	    */
 	   
 	   public void scrollActions(WebDriver driver,WebElement element)
 	   {
 	      JavascriptExecutor js=(JavascriptExecutor)driver;
 	      int y=element.getLocation().getY();
-	       js.executeScript("window.scollBy(0,"+y+")",element);
+	       js.executeScript("window.scrollBy(0,"+y+")",element);
 	   }
+	   
+	  
 
 
 
