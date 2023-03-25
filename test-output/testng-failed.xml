@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Practice.Practice1">
+      <class name="Practice.Practice1Test">
         <methods>
           <include name="befClassConf"/>
-          <include name="befMethodConf"/>
           <include name="test1"/>
+          <include name="befMethodConf"/>
           <include name="aftMethodConf"/>
           <include name="aftClassconf"/>
           <include name="befSuiteConf"/>
           <include name="aftSuiteConf"/>
         </methods>
-      </class> <!-- Practice.Practice1 -->
+      </class> <!-- Practice.Practice1Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

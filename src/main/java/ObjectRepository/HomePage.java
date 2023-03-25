@@ -45,7 +45,7 @@ public class HomePage extends WebDriverUtility {
 	@FindBy(id="//img[@src='themes/softed/images/user.PNG']")
 	private WebElement adminstrationsBte;
 	
-	@FindBy(linkText="Sign Out")
+	@FindBy(xpath="//a[text()='Sign Out']")
 	private WebElement signoutBtn;
 	
 	

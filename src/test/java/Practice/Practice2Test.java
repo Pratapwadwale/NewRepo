@@ -23,7 +23,7 @@ import ObjectRepository.LoginPage;
 @Listeners(ListenersImplementationClass.class)
 public class Practice2Test extends BaseClass { 
 
-	@Test
+	@Test(groups="SmokeSuite")
 	public void createContact() throws EncryptedDocumentException, IOException
 	{
 		//eUtil.readDataFromExcel("contact", rn);

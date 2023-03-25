@@ -27,7 +27,7 @@ import ObjectRepository.OrganizationPage;
 @Listeners(GenericUtility.ListenersImplementationClass.class)
 
 public class Practice1Test extends BaseClass{
-	@Test
+	@Test(groups="SmokeSuite")
 	public void test1() throws EncryptedDocumentException, IOException 
 	{
 //		PropertyFileUtility pUtil=new PropertyFileUtility();

@@ -90,6 +90,7 @@ public class BaseClass {
 	@AfterMethod
 	public void aftMethodConf()
 	{
+		System.out.println("After Method Logout");
 		HomePage hp=new HomePage(driver);
 		hp.logout(driver);
 		System.out.println("After Method");

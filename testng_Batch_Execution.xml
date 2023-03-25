@@ -5,6 +5,7 @@
     <classes>
       <class name="Practice.Practice2"/>
       <class name="Practice.Practice1"/>
+      <class name="Practice.CreateLead"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

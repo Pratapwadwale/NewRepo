@@ -2,24 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-14T17:11:29 IST" name="Default suite" finished-at="2023-03-14T17:13:14 IST" duration-ms="104626">
+  <suite started-at="2023-03-25T22:10:50 IST" name="Default suite" finished-at="2023-03-25T22:12:01 IST" duration-ms="71278">
     <groups>
+      <group name="SmokeSuite">
+        <method signature="Practice1Test.test1()[pri:0, instance:Practice.Practice1Test@4c1909a3]" name="test1" class="Practice.Practice1Test"/>
+      </group> <!-- SmokeSuite -->
     </groups>
-    <test started-at="2023-03-14T17:11:29 IST" name="Default test" finished-at="2023-03-14T17:13:14 IST" duration-ms="104626">
-      <class name="Practice.Practice1">
-        <test-method is-config="true" signature="befSuiteConf()[pri:0, instance:Practice.Practice1@4c1909a3]" started-at="2023-03-14T17:11:29 IST" name="befSuiteConf" finished-at="2023-03-14T17:11:29 IST" duration-ms="14" status="PASS">
+    <test started-at="2023-03-25T22:10:50 IST" name="Default test" finished-at="2023-03-25T22:12:01 IST" duration-ms="71278">
+      <class name="Practice.Practice1Test">
+        <test-method is-config="true" signature="befSuiteConf()[pri:0, instance:Practice.Practice1Test@4c1909a3]" started-at="2023-03-25T22:10:50 IST" name="befSuiteConf" finished-at="2023-03-25T22:10:50 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befSuiteConf -->
-        <test-method is-config="true" signature="befClassConf()[pri:0, instance:Practice.Practice1@4c1909a3]" started-at="2023-03-14T17:11:30 IST" name="befClassConf" finished-at="2023-03-14T17:12:19 IST" duration-ms="49134" status="PASS">
+        <test-method is-config="true" signature="befClassConf()[pri:0, instance:Practice.Practice1Test@4c1909a3]" started-at="2023-03-25T22:10:51 IST" name="befClassConf" finished-at="2023-03-25T22:11:05 IST" duration-ms="14490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befClassConf -->
-        <test-method is-config="true" signature="befMethodConf()[pri:0, instance:Practice.Practice1@4c1909a3]" started-at="2023-03-14T17:12:20 IST" name="befMethodConf" finished-at="2023-03-14T17:12:29 IST" duration-ms="9328" status="PASS">
+        <test-method is-config="true" signature="befMethodConf()[pri:0, instance:Practice.Practice1Test@4c1909a3]" started-at="2023-03-25T22:11:05 IST" name="befMethodConf" finished-at="2023-03-25T22:11:21 IST" duration-ms="15956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befMethodConf -->
-        <test-method signature="test1()[pri:0, instance:Practice.Practice1@4c1909a3]" started-at="2023-03-14T17:12:29 IST" name="test1" finished-at="2023-03-14T17:12:53 IST" duration-ms="24306" status="FAIL">
+        <test-method signature="test1()[pri:0, instance:Practice.Practice1Test@4c1909a3]" started-at="2023-03-25T22:11:21 IST" name="test1" finished-at="2023-03-25T22:11:40 IST" duration-ms="19379" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -30,7 +33,7 @@ at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertTrue(Assert.java:45)
 at org.testng.Assert.assertTrue(Assert.java:55)
-at Practice.Practice1.test1(Practice1.java:64)
+at Practice.Practice1Test.test1(Practice1Test.java:64)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,25 +68,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="aftMethodConf()[pri:0, instance:Practice.Practice1@4c1909a3]" started-at="2023-03-14T17:12:54 IST" name="aftMethodConf" finished-at="2023-03-14T17:13:14 IST" duration-ms="20092" status="FAIL">
+        <test-method is-config="true" signature="aftMethodConf()[pri:0, instance:Practice.Practice1Test@4c1909a3]" started-at="2023-03-25T22:11:41 IST" name="aftMethodConf" finished-at="2023-03-25T22:12:01 IST" duration-ms="20167" status="FAIL">
           <exception class="org.openqa.selenium.json.JsonException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-0VPJP2T', ip: '192.168.148.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [345bf69047bb654fa33719c5f78fab01, actions {actions=[org.openqa.selenium.interactions.Sequence@4de79b7d]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.69, ms:edgeOptions: {debuggerAddress: localhost:65478}, msedge: {msedgedriverVersion: 110.0.1587.69 (f970cc122bfe..., userDataDir: C:\Users\Santoshi\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65478/devtoo..., se:cdpVersion: 110.0.1587.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 345bf69047bb654fa33719c5f78fab01]]>
+Command: [144dae2416481dacbf97287c4e5efcb1, actions {actions=[org.openqa.selenium.interactions.Sequence@183ade54]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.54, ms:edgeOptions: {debuggerAddress: localhost:60975}, msedge: {msedgedriverVersion: 110.0.1587.69 (f970cc122bfe..., userDataDir: C:\Users\Santoshi\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60975/devtoo..., se:cdpVersion: 111.0.1661.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 144dae2416481dacbf97287c4e5efcb1]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-0VPJP2T', ip: '192.168.148.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [345bf69047bb654fa33719c5f78fab01, actions {actions=[org.openqa.selenium.interactions.Sequence@4de79b7d]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.69, ms:edgeOptions: {debuggerAddress: localhost:65478}, msedge: {msedgedriverVersion: 110.0.1587.69 (f970cc122bfe..., userDataDir: C:\Users\Santoshi\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65478/devtoo..., se:cdpVersion: 110.0.1587.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 345bf69047bb654fa33719c5f78fab01
+Command: [144dae2416481dacbf97287c4e5efcb1, actions {actions=[org.openqa.selenium.interactions.Sequence@183ade54]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.54, ms:edgeOptions: {debuggerAddress: localhost:60975}, msedge: {msedgedriverVersion: 110.0.1587.69 (f970cc122bfe..., userDataDir: C:\Users\Santoshi\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60975/devtoo..., se:cdpVersion: 111.0.1661.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 144dae2416481dacbf97287c4e5efcb1
 at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
 at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
 at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
@@ -117,7 +120,7 @@ at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567
 at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
 at GenericUtility.WebDriverUtility.mouseHoverAction(WebDriverUtility.java:92)
 at ObjectRepository.HomePage.logout(HomePage.java:137)
-at GenericUtility.BaseClass.aftMethodConf(BaseClass.java:94)
+at GenericUtility.BaseClass.aftMethodConf(BaseClass.java:95)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,14 +169,14 @@ at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
 ... 66 more
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/img\[\@src\=\'themes\/softed\/images\/user\.PNG\'\]"}
-  (Session info: MicrosoftEdge=110.0.1587.69)
+  (Session info: MicrosoftEdge=111.0.1661.54)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-0VPJP2T', ip: '192.168.148.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [345bf69047bb654fa33719c5f78fab01, findElement {using=id, value=//img[@src='themes/softed/images/user.PNG']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.69, ms:edgeOptions: {debuggerAddress: localhost:65478}, msedge: {msedgedriverVersion: 110.0.1587.69 (f970cc122bfe..., userDataDir: C:\Users\Santoshi\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65478/devtoo..., se:cdpVersion: 110.0.1587.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 345bf69047bb654fa33719c5f78fab01
+Command: [144dae2416481dacbf97287c4e5efcb1, findElement {using=id, value=//img[@src='themes/softed/images/user.PNG']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.54, ms:edgeOptions: {debuggerAddress: localhost:60975}, msedge: {msedgedriverVersion: 110.0.1587.69 (f970cc122bfe..., userDataDir: C:\Users\Santoshi\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60975/devtoo..., se:cdpVersion: 111.0.1661.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 144dae2416481dacbf97287c4e5efcb1
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -204,15 +207,15 @@ at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftMethodConf -->
-        <test-method is-config="true" signature="aftClassconf()[pri:0, instance:Practice.Practice1@4c1909a3]" started-at="2023-03-14T17:13:14 IST" name="aftClassconf" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1678794194327" status="SKIP">
+        <test-method is-config="true" signature="aftClassconf()[pri:0, instance:Practice.Practice1Test@4c1909a3]" started-at="2023-03-25T22:12:01 IST" name="aftClassconf" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1679762521586" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftClassconf -->
-        <test-method is-config="true" signature="aftSuiteConf()[pri:0, instance:Practice.Practice1@4c1909a3]" started-at="2023-03-14T17:13:15 IST" name="aftSuiteConf" finished-at="2023-03-14T17:13:15 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aftSuiteConf()[pri:0, instance:Practice.Practice1Test@4c1909a3]" started-at="2023-03-25T22:12:02 IST" name="aftSuiteConf" finished-at="2023-03-25T22:12:02 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftSuiteConf -->
-      </class> <!-- Practice.Practice1 -->
+      </class> <!-- Practice.Practice1Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
